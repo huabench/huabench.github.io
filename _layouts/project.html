@@ -1,0 +1,35 @@
+---
+layout: default  # 您可以根据您的网站的默认布局进行自定义
+---
+
+{% include base_path %}
+
+{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+  {% include page__hero.html %}
+{% endif %}
+
+{% if page.url != "/" and site.breadcrumbs %}
+  {% unless paginator %}
+    {% include breadcrumbs.html %}
+  {% endunless %}
+{% endif %}
+
+<div id="main" role="main">
+  {% include sidebar.html %}
+
+  <div class="project-detail">
+    <h1>{{ page.title }}</h1>
+    
+    <p><strong>Description:</strong> {{ page.description }}</p>
+    
+    <p><strong>Author:</strong> {{ page.author }}</p>
+    
+    <p><strong>Date:</strong> {{ page.date | date: "%B %d, %Y" }}</p>
+    
+    <p><strong>URL:</strong> <a href="{{ page.url }}" target="_blank">{{ page.url }}</a></p>
+    
+    <p><strong>Tech Stack:</strong> {{ page.tech-stack }}</p>
+    
+    <p>{{ content | markdownify }}</p>  <!-- 渲染项目详细信息内容 -->
+  </div>
+</div>
