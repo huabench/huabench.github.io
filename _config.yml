@@ -11,6 +11,7 @@ title                    : "Huaben Chen / Personal Website"
 title_separator          : "-"
 name                     : &name "Huaben Chen"
 description              : &description "personal description"
+notification             : "Website is under maintaining"
 url                      : #https://huabench.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "huabench/huabench.github.io"
@@ -83,7 +84,16 @@ author:
   name             : "Huaben Chen"
   avatar           : "profile.png"
   bio              : "UAV System Engineer at Westlake University"
+  long-bio         : "I received my Master's Degree of Science after graduating from 
+                      University of Southern California. From 2011 to 2015, I was an 
+                      undergraduate student at Harbin Institute of Technology where 
+                      I graduated with honor. I worked as an algorithm engineer in 
+                      Hangzhou, responsible for algorithm development, full stack 
+                      development and embedded development. Currently, I am an UAV 
+                      System engineer in Intelligent Unmanned Systems Laboratory at 
+                      Westlake University."
   location         : "Hangzhou, China"
+  interests        : "robotics, system architecture and LLM"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : #"http://yourfullgooglescholarurl.com"
